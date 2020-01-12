@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="Chinook.jar" size="350644" download="eager" />
+    <jar href="Chinook.jar" size="3405578" download="eager" />
     <jar href="lib\sqlite-jdbc-3.30.1.jar" size="6096861" download="eager" />
   </resources>
   <jfx:javafx-desc  width="800" height="600" main-class="chinook.Chinook"  name="Chinook" />

@@ -25,6 +25,7 @@ public class Chinook extends Application {
         Image icon = new Image(getClass().getResourceAsStream("/images/mylogo2.png"));
         stage.getIcons().add(icon);
         Scene scene = new Scene(root,1000,900);
+        scene.getStylesheets().add(getClass().getResource("ChinookCSS.css").toExternalForm());
         stage.setTitle("Chinook");
         stage.setScene(scene);
         stage.show();

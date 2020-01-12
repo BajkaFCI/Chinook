@@ -1,0 +1,117 @@
+
+/* 
+    Created on : 2020-01-12, 14:47:18
+    Author     : PSluis
+*/
+
+
+.root {
+     -fx-background-image: url("/images/techbg.png");
+}
+
+.split-pane {
+ -fx-background-image: url("/images/techbg.png");
+ }
+
+ 
+ /*******************************************************************************
+ *                                                                             *
+ * TextField                                                                   *
+ *                                                                             *
+ ******************************************************************************/
+
+.text-field {
+    -fx-background-color: -fx-shadow-highlight-color, -fx-text-box-border, -fx-control-inner-background;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 3, 2, 2;
+    -fx-padding: 0.25em 0.416667em  0.333333em 0.416667em; /* 3 5 4 5 */
+    -fx-text-fill: -fx-text-inner-color;
+    -fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);
+    -fx-cursor: text;
+-fx-font-size: 18px;
+}
+
+.text-field:focused {
+    -fx-background-color: -fx-focus-color, -fx-text-box-border, -fx-control-inner-background;
+    -fx-background-insets: -0.4, 1, 2;
+    -fx-background-radius: 3.4, 2, 2;
+    -fx-prompt-text-fill: transparent;
+}
+
+.text-field:disabled {
+    -fx-opacity: -fx-disabled-opacity;
+}    
+
+
+/*******************************************************************************
+ *                                                                             *
+ * Buttons                                                                   *
+ *                                                                             *
+ ******************************************************************************/
+    
+    #updateBtn{
+        -fx-background-color:#ff00ff;
+     -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+    -fx-font-size: 18px;
+    -fx-pref-Width: 180px;
+    }    
+    #updateBtn:hover{
+   /*Your button style on hover*/
+-fx-background-color: #ffccff;
+-fx-pref-Width: 185px;
+    }
+
+#updateBtn:pressed{
+    /*Your button style on pressed*/
+-fx-background-color: #ffffff;
+-fx-pref-Width: 185px;
+}
+    
+    #addemployeeBtn{
+     -fx-background-color: #66ff33;
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+    -fx-font-size: 18px;
+    -fx-pref-Width: 180px;
+    }
+    
+#addemployeeBtn:hover{
+   /*Your button style on hover*/
+-fx-background-color: #ccffcc;
+-fx-pref-Width: 185px;
+}
+
+#addemployeeBtn:pressed{
+    /*Your button style on pressed*/
+-fx-background-color: #ffffff;
+-fx-pref-Width: 185px;
+}
+    
+    #exitBtn{
+    -fx-background-color: #ff0000;
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+    -fx-font-size: 18px;
+    -fx-pref-Width: 180px;
+    }    
+
+    #exitBtn:hover{
+   /*Your button style on hover*/
+-fx-background-color: #996600;
+-fx-pref-Width: 185px;
+    }
+
+#exitBtn:pressed{
+    /*Your button style on pressed*/
+-fx-background-color: #ffffff;
+-fx-pref-Width: 185px;
+}
+
+

@@ -11,20 +11,20 @@
 
 <AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="chinook.ChinookController">
    <children>
-      <SplitPane dividerPositions="0.8" layoutX="271.0" layoutY="291.0" orientation="VERTICAL" prefHeight="900.0" prefWidth="900.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <SplitPane dividerPositions="0.8" layoutX="271.0" layoutY="291.0" orientation="VERTICAL" prefHeight="900.0" prefWidth="900.0" stylesheets="@ChinookCSS.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <items>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" stylesheets="@ChinookCSS.css">
                <children>
                   <SplitPane dividerPositions="0.43" layoutX="349.0" layoutY="251.0" prefHeight="640.0" prefWidth="898.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <items>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="653.0" prefWidth="400.0">
                            <children>
-                              <TextField fx:id="lastnamefilter" prefWidth="75.0" />
-                              <TextField fx:id="firstnamefilter" layoutX="113.0" prefWidth="75.0" AnchorPane.leftAnchor="75.0" />
-                              <TextField fx:id="idfilter" prefWidth="25.0" AnchorPane.leftAnchor="150.0" />
-                              <TextField fx:id="hiredatefilter" prefWidth="120.0" AnchorPane.leftAnchor="175.0" />
-                              <TextField fx:id="birthdategilter" prefWidth="118.0" AnchorPane.leftAnchor="295.0" />
-                              <TableView fx:id="employeetable1" layoutX="29.0" layoutY="35.0" prefHeight="638.0" prefWidth="450.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="25.0">
+                              <TextField fx:id="lastnamefilter" prefWidth="75.0" AnchorPane.leftAnchor="25.0" AnchorPane.topAnchor="25.0" />
+                              <TextField fx:id="firstnamefilter" layoutX="113.0" prefWidth="75.0" AnchorPane.leftAnchor="100.0" AnchorPane.topAnchor="25.0" />
+                              <TextField fx:id="idfilter" prefWidth="25.0" AnchorPane.leftAnchor="175.0" AnchorPane.topAnchor="25.0" />
+                              <TextField fx:id="hiredatefilter" prefWidth="120.0" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="25.0" />
+                              <TextField fx:id="birthdategilter" prefWidth="118.0" AnchorPane.leftAnchor="320.0" AnchorPane.topAnchor="25.0" />
+                              <TableView fx:id="employeetable1" layoutX="29.0" layoutY="35.0" prefHeight="638.0" prefWidth="450.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
                                 <columns>
                                   <TableColumn fx:id="LASTNAME" prefWidth="75.0" text="Lastname" />
                                   <TableColumn fx:id="FIRSTNAME" prefWidth="75.0" text="Firstname" />
@@ -37,7 +37,7 @@
                         </AnchorPane>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                            <children>
-                              <TableView fx:id="employeetable2" layoutX="138.0" layoutY="141.0" prefHeight="638.0" prefWidth="476.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                              <TableView fx:id="employeetable2" layoutX="138.0" layoutY="141.0" prefHeight="638.0" prefWidth="476.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="50.0">
                                 <columns>
                                   <TableColumn fx:id="LASTNAME2" prefWidth="75.0" text="Lastname" />
                                   <TableColumn fx:id="FIRSTNAME2" prefWidth="75.0" text="Firstname" />
@@ -52,7 +52,7 @@
                   </SplitPane>
                </children>
             </AnchorPane>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" stylesheets="@ChinookCSS.css">
                <children>
                   <TextField fx:id="lastnameTF" layoutX="14.0" layoutY="53.0" prefWidth="75.0" AnchorPane.leftAnchor="20.0" />
                   <TextField fx:id="firstnameTF" layoutX="115.0" layoutY="53.0" prefWidth="75.0" AnchorPane.leftAnchor="105.0" />
