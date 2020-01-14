@@ -91,7 +91,30 @@
 -fx-background-color: #ffffff;
 -fx-pref-Width: 185px;
 }
-    
+
+ #deleteRowBtn{
+    -fx-background-color: #ff5050;
+    -fx-background-radius: 6, 5;
+    -fx-background-insets: 0, 1;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+    -fx-text-fill: #395306;
+    -fx-font-size: 18px;
+    -fx-pref-Width: 150px;
+    }    
+
+    #deleteRowBtn:hover{
+   /*Your button style on hover*/
+-fx-background-color: #ff9999;
+-fx-pref-Width: 155px;
+    }
+
+#deleteRowBtn:pressed{
+    /*Your button style on pressed*/
+-fx-background-color: #ffffff;
+-fx-pref-Width: 155px;
+}
+
+
     #exitBtn{
     -fx-background-color: #ff0000;
     -fx-background-radius: 6, 5;

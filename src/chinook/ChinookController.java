@@ -56,6 +56,7 @@ public class ChinookController implements Initializable {
     
     @FXML private Button updateBtn;
     @FXML private Button addemployeeBtn;
+    @FXML private Button deleteRowBtn;
     @FXML private Button exitBtn;
 
     
@@ -307,6 +308,23 @@ employeetable2.getColumns().addAll();
 employeetable2.setItems(oblist2);    
 
 }     
+
+public void deleteRow(ActionEvent event){
+
+EmployeeTable1 et1 = (EmployeeTable1) employeetable1.getSelectionModel().getSelectedItem();
+Integer tempEmpId = et1.getEmployeeId();
+            try{
+    Connection sqlconn = SQLiteConnection.sqliteconnect();
+    PreparedStatement delrowstatement = sqlconn.prepareStatement("DELETE FROM employees WHERE EmployeeId = '"+tempEmpId+"'");
+    delrowstatement.executeUpdate();        
+     } catch (SQLException ex) {
+        Logger.getLogger(ChinookController.class.getName()).log(Level.SEVERE, null, ex);
+     }
+
+}
+
+
+        
         
 public void exit(ActionEvent event){
 stage = (Stage)exitBtn.getScene().getWindow();

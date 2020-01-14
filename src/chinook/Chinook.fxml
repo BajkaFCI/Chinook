@@ -66,6 +66,7 @@
                   <DatePicker fx:id="birthdateDP" layoutX="359.0" layoutY="54.0" prefWidth="150.0" />
                   <Button fx:id="updateBtn" layoutX="556.0" layoutY="53.0" mnemonicParsing="false" onAction="#updateEmployeeTable1" text="update" />
                   <Button fx:id="exitBtn" layoutX="408.0" layoutY="118.0" mnemonicParsing="false" onAction="#exit" text="EXIT" />
+                  <Button fx:id="deleteRowBtn" layoutX="241.0" layoutY="105.0" mnemonicParsing="false" onAction="#deleteRow" text="delete row" />
                </children></AnchorPane>
         </items>
       </SplitPane>
